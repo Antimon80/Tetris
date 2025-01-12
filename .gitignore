@@ -30,3 +30,32 @@
 *.exe
 *.out
 *.app
+
+# VSCode settings
+.vscode/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+build/
+*.cmake
+
+# Makefiles
+Makefile
+
+# Backup and temporary files
+*.bak
+*.swp
+*.tmp
+*.temp
+*.~*
+
+# Logs
+*.log
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
