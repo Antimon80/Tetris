@@ -1,0 +1,12 @@
+{
+    "sketch": "Tetris.ino",
+    "port": "COM5",
+    "board": "arduino:avr:mega",
+    "output": "./build",
+    "libraries": [
+        "Adafruit GFX Library",
+        "RGBmatrixPanel",
+        "DFRobotDFPlayerMini",
+        "Keypad"
+    ]
+}
