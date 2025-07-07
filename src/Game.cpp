@@ -34,7 +34,7 @@ Game::Game()
       level(1),
       clearedRows(0),
       totalClearedRows(0),
-      fallSpeed(1000),
+      fallSpeed(500),
       lastFallTime(0),
       isPaused(false),
       gameOver(false),
@@ -331,9 +331,9 @@ void Game::updateScore(uint8_t rowsCleared) {
  * fall faster.
  */
 void Game::updateLevelAndSpeed() {
-  if (clearedRows >= 10) {
+  if (clearedRows >= 3) {
     level++;
-    clearedRows -= 10;
+    clearedRows -= 3;
     fallSpeed = (fallSpeed > 100 ? fallSpeed - 100 : 100);
     updateLevelDisplay(level);
 
